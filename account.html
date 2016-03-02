@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FDM Graduate Analysis Application</title>
+        <title>Account</title>
         <link href="css/FDMapplicationcss.css" type="text/css" rel="stylesheet" />
         <meta charset="utf-8" />
     </head>
@@ -16,13 +16,19 @@
                     <li><a href="main.html">Main</a></li>
                 </ul>
             </nav>
-            
         </div>
         
-        <p class="spacing">Select the two fields you would like to compare:</p>
-        
         <div class="spacing">
-        X-axis:   <select class="dropdown" class="x-axis">
+			Nickname: <input type="text" name="staffname" placeholder="What would you like this app to call you?" required/>
+		</div>
+		<div class="spacing">
+		    Username: <input type="text" name="username" placeholder="Username to enter for login" required/>
+		</div>
+		<div class="spacing">
+		    Password: <input type="text" name="password" placeholder="Password to enter for login" required/>
+		</div>
+		<div class="spacing">
+        X-axis of chart displayed upon login:   <select class="dropdown" class="x-axis">
             <option value="degreeclass">Degree Classification</option>
             <option value="degreesub">Degree Subject</option>
             <option value="enddate">End Date</option>
@@ -36,8 +42,8 @@
             <option value="uniofstudy">University of Study</option>
         </select>
         </div>
-        <div class="spacing">
-        Y-axis:   <select class="dropdown" class="y-axis">
+        <div class=spacing>
+        Y-axis of chart displayed upon login:   <select class="dropdown" class="y-axis">
             <option value="degreeclass">Degree Classification</option>
             <option value="degreesub">Degree Subject</option>
             <option value="enddate">End Date</option>
@@ -51,12 +57,16 @@
             <option value="uniofstudy">University of Study</option>
         </select>
         </div>
-        
-        <p  class="spaceupper">Select how you would like the data displayed:</p>
+        <div>
+        <fieldset>
+        <legend>Type of chart displayed upong login</legend>
         <form action="">
             <label><input type="radio" name="visual" value="bar" class="spacing"> Bar Chart</label><br>
             <label><input type="radio" name="visual" value="line" class="spacing"> Line Graph</label><br>
             <label><input type="radio" name="visual" value="pie" class="spacing"> Pie Chart</label><br>
+        </fieldset>
         </form>
+        </div>
+
     </body>
 </html>
