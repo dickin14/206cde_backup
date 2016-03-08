@@ -28,7 +28,6 @@ nav ul {
 nav ul li {
     float: right;
     width: 15%;
-    color: white;
 }
 
 a:link {
@@ -73,4 +72,8 @@ input[type=text] {
     width: 90%;
     font-size: 1em;
     float: right;
+}
+
+#emptyid {
+    clear: both;
 }
